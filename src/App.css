@@ -1,0 +1,236 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background-image: url('/public/images/chapka.jpg'); /* Устанавливаем фон */
+  background-size: contain; /* Изображение будет полностью видно */
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.header .logo {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.header .logo img {
+  width: 80px; /* Устанавливаем размер логотипа */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 15px 20px; /* Увеличиваем отступы */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #444;
+  padding: 8px 16px; /* Уменьшаем размеры кнопок */
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  opacity: 0.8; /* Делаем кнопки полупрозрачными */
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  opacity: 1; /* Убираем полупрозрачность при наведении */
+}
+
+nav ul li a i {
+  margin-right: 8px; /* Добавляем отступ для иконок */
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 100px; /* Увеличиваем отступ снизу */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button-container button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+  background-color: #555;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.social-media a:hover {
+  background-color: #555;
+}
+
+.social-media i {
+  margin-right: 8px;
+}
+
+.email {
+  margin-top: 20px;
+}
+
+.email a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.email a:hover {
+  background-color: #555;
+}
+
+.email i {
+  margin-right: 8px;
+}
+
+.donate {
+  margin-top: 20px;
+}
+
+.donate a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.donate a:hover {
+  background-color: #555;
+}
+
+.donate i {
+  margin-right: 8px;
+}
+
+.official-website {
+  margin-top: 20px;
+}
+
+.official-website a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.official-website a:hover {
+  background-color: #555;
+}
+
+.official-website i {
+  margin-right: 8px;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-container img {
+  margin: 10px;
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+  .header .logo img {
+    width: 60px; /* Уменьшаем размер логотипа на мобильных устройствах */
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    width: 45%;
+    margin: 10px 0; /* Увеличиваем отступы */
+  }
+
+  .button-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .button-container button {
+    width: 45%;
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .button-container button {
+    width: auto;
+  }
+}
+

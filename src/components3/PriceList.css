@@ -1,0 +1,104 @@
+/* src/PriceList.css */
+.PriceList {
+  text-align: center;
+  padding: 20px;
+}
+
+.talentsPriceList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.talentPriceList {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.talentPriceList:hover {
+  transform: scale(1.05);
+}
+
+.talentPriceList img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.talentPriceList h2 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.talent-info img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.talent-info h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.talent-info p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.menu-button {
+  margin-top: 20px;
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+  .talentsPriceList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .talentPriceList {
+    width: 45%; /* Устанавливаем ширину для двух колонок */
+    margin: 10px 0;
+  }
+
+  .talent-info img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .talent-info h2 {
+    font-size: 18px;
+  }
+
+  .talent-info p {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+}

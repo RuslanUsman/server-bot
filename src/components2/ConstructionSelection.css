@@ -1,0 +1,95 @@
+/* src/ConstructionSelection.css */
+.construction-selection {
+  text-align: center;
+  padding: 20px;
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.item span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.quantity-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity-controls button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quantity-controls button:hover {
+  background-color: #555;
+}
+
+.quantity-controls span {
+  margin: 0 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.button-container button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+  background-color: #555;
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+  .items-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .item {
+    width: 45%; /* Устанавливаем ширину для двух колонок */
+    margin: 10px 0;
+  }
+}

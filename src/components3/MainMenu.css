@@ -1,0 +1,64 @@
+/* src/MainMenu.css */
+.MainMenu {
+  text-align: center;
+  padding: 20px;
+}
+
+.talentsmenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.talentmenu {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.talentmenu:hover {
+  transform: scale(1.05);
+}
+
+.talentmenu img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.talentmenu h2 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+  .talentsmenu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .talentmenu {
+    width: 45%; /* Устанавливаем ширину для двух колонок */
+    margin: 10px 0;
+  }
+}

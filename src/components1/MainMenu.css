@@ -1,0 +1,98 @@
+/* src/MainMenu.css */
+.MainMenu {
+  text-align: center;
+  padding: 20px;
+}
+
+.components {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.component {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.component:hover {
+  transform: scale(1.05);
+}
+
+.component img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.component h2 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.quantity-controls button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quantity-controls button:hover {
+  background-color: #555;
+}
+
+.quantity-controls input {
+  width: 50px;
+  text-align: center;
+  margin: 0 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.quantity-controls input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+  .components {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .component {
+    width: 45%; /* Устанавливаем ширину для двух колонок */
+    margin: 10px 0;
+  }
+}
