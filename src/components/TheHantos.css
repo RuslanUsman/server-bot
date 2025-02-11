@@ -1,0 +1,59 @@
+.hantos-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #dad4d4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hantos-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Добавляем тень к заголовку */
+  }
+  
+  .hantos-image img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .social-media a {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем тень к тексту кнопок */
+  }
+  
+  .social-media a:hover {
+    background-color: #666;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .social-media i {
+    margin-right: 10px;
+  }
+  
+  h1, h2, h3 {
+    color: #555;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); /* Добавляем тень к заголовкам */
+  }

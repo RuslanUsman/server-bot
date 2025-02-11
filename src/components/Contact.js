@@ -1,11 +1,14 @@
-// src/components/Contact.js
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import './Contact.css';
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact-container">
       <h1>Контакты</h1>
+      <div className="contact-image">
+      <img src={`${process.env.PUBLIC_URL}/images/baner5.webp`} alt="About" className="about-image" />
+      </div>
       <p>Свяжитесь с командой Last Island of Survival.</p>
       <h2>Социальные сети</h2>
       <div className="social-media">
@@ -54,4 +57,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
 

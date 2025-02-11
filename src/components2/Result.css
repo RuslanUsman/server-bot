@@ -1,4 +1,5 @@
 .result {
+  background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +26,7 @@
 .result table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .result table, .result th, .result td {

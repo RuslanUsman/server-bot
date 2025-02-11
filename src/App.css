@@ -3,15 +3,15 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #0c0c0c;
 }
 
 .header {
-  background-image: url('/public/images/chapka.jpg'); /* Устанавливаем фон */
+   /*background-image: url('/images/logo.jpg'); /* Устанавливаем фон */
   background-size: contain; /* Изображение будет полностью видно */
   background-repeat: no-repeat;
   background-position: center;
-  color: #fff;
+  color: #8d5050;
   padding: 20px 0;
   text-align: center;
   position: relative;

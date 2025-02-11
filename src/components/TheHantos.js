@@ -1,11 +1,14 @@
-// src/components2/TheHantos.js
 import React from 'react';
+import './TheHantos.css';
 
 const TheHantos = () => {
   return (
-    <div>
-      <h1>TheHantos</h1>
-      <p>Связаться с TheHantos!</p>
+    <div className="hantos-container">
+      <h1 className="hantos-title">TheHantos</h1>
+      <div className="hantos-image">
+        <img src={`${process.env.PUBLIC_URL}/images/baner3.webp`} alt="About" className="about-image" />
+      </div>
+      <h2>Связаться с TheHantos!</h2>
       <h2>Социальные сети</h2>
       <div className="social-media">
         <a href="https://www.youtube.com/channel/UCDVX4v1boSX8jXowOKjmY7A?sub_confirmation=1" target="_blank" rel="noopener noreferrer">
@@ -21,7 +24,7 @@ const TheHantos = () => {
           <i className="fab fa-discord"></i> Discord Канал
         </a>
       </div>
-      <h2>Связаться самной</h2>
+      <h2>Связаться c Dragon</h2>
       <h3>в телеграмме ник Dragon</h3>
       <div className="social-media">
         <a href="https://web.telegram.org/a/#5930230795" target="_blank" rel="noopener noreferrer">
@@ -33,3 +36,4 @@ const TheHantos = () => {
 };
 
 export default TheHantos;
+

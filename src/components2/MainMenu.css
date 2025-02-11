@@ -1,50 +1,64 @@
-/* src/MainMenu.css */
 .main-menu {
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.main-menu h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .items-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center; /* Размещаем элементы по вертикали */
+  gap: 2px; /* Расстояние между элементами */
+  justify-content: space-around; /* Разделяем элементы по ширине */
+  justify-content: center; /* Размещаем элементы по центру */
+  justify-content: space-between; /* Разделяем элементы по ширине */
 }
 
 .item {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
-  transition: transform 0.3s;
+  flex-basis: calc(50% - 10px); /* Две колонки */
+  flex-basis: calc(33.33% - 10px); /* Три колонки */
+  flex-basis: calc(25% - 10px); /* ��етыре колонки */
+  flex-basis: calc(20% - 10px); /* Пять колонок */
+  flex-basis: calc(16.67% - 10px); /* Семь колонок */
+  flex-basis: calc(14.29% - 10px); /* Восемь колонок */
+  flex-basis: calc(12.5% - 10px); /* Девять колонок */
+  flex-basis: calc(10% - 10px); /* Десять колонок */
+  width: calc(50% - 10px); /* Две колонки */
 }
 
 .item:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .item img {
-  width: 100px;
-  height: 100px;
+  width: 80px; /* Уменьшаем размер изображения */
+  height: 80px; /* Уменьшаем размер изображения */
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .item p {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 1em; /* Уменьшаем размер текста */
   color: #333;
-}
-
-/* Медиа-запросы для адаптивного дизайна */
-@media (max-width: 768px) {
-  .items-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .item {
-    width: 45%; /* Устанавливаем ширину для двух колонок */
-    margin: 10px 0;
-  }
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }

@@ -1,6 +1,6 @@
-// src/components/Projects.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Projects.css';
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -18,8 +18,11 @@ const Projects = () => {
   };
 
   return (
-    <div>
-      <h1>Наши проекты</h1>
+    <div className="projects-container">
+      <h1 className="projects-title">Наши проекты</h1>
+      <div className="projects-image">
+        <img src={`${process.env.PUBLIC_URL}/images/baner1.jpg`} alt="About" className="about-image" />
+      </div>
       <p>Ознакомьтесь с различными приложениями, связанными с Последним островом выживания.</p>
       <h2>Калькуляторы</h2>
       <div className="button-container">
@@ -36,6 +39,7 @@ const Projects = () => {
 };
 
 export default Projects;
+
 
 
 

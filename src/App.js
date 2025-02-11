@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './components/Home';
@@ -10,8 +9,7 @@ import Thehantos from './components/TheHantos'; // Импортируем ком
 
 // Импортируем компоненты из папки components1
 import MainMenuExplosions from './components1/MainMenu';
-import ResultsExplosion from  './components1/Results';
-
+import ResultsExplosion from './components1/Results';
 
 // Импортируем компоненты из папки components2
 import MainMenu from './components2/MainMenu';
@@ -28,7 +26,6 @@ import Intellect from './components3/Intellect';
 import PriceList from './components3/PriceList';
 import SearchResults from './components3/SearchResults';
 
-
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Импортируем стили Font Awesome
 
@@ -36,10 +33,9 @@ const App = () => {
   return (
     <Router>
       <div>
-        <header className="header" style={{ backgroundImage: 'url(/images/chapka.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', color: '#fff', padding: '20px 0', textAlign: 'center', position: 'relative' }}>
-          <div className="logo" style={{ display: 'inline-block', marginBottom: '10px' }}>
-            <img src="/images/chapka.jpg" alt="Logo" style={{ width: '80px' }} />
-          </div>
+        <header className="header" style={{ 
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/logo.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center', color: '#fff', padding: '20px 0', textAlign: 'center', position: 'relative' }}>
+          
           <nav>
             <ul style={{ listStyle: 'none', padding: '0', display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
               <li style={{ margin: '15px 20px' }}><Link to="/" style={{ color: '#fff', textDecoration: 'none', backgroundColor: '#444', padding: '8px 16px', borderRadius: '5px', transition: 'background-color 0.3s' }}><i className="fas fa-home"></i> Домой</Link></li>
@@ -79,10 +75,6 @@ const App = () => {
             <Route path="/intellect" element={<Intellect />} />
             <Route path="/pricelist" element={<PriceList />} />
             <Route path="/search-results" element={<SearchResults />} />
-
-
-
-
           </Routes>
         </main>
         <footer>
@@ -94,6 +86,7 @@ const App = () => {
 };
 
 export default App;
+
 
 
 
