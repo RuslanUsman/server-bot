@@ -1,45 +1,46 @@
-/* src/Results.css */
 .Results {
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .Results h1 {
+  font-size: 2em;
   margin-bottom: 20px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .Results h2 {
+  font-size: 1.5em;
   margin-bottom: 20px;
+  color: #666;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .Results p {
-  margin: 10px 0;
-  font-size: 16px;
+  font-size: 1.2em;
+  line-height: 1.6;
   color: #333;
+  margin-bottom: 10px;
 }
 
-button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
+.Results button {
   margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #444;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #555;
-}
-
-/* Медиа-запросы для адаптивного дизайна */
-@media (max-width: 768px) {
-  .Results p {
-    font-size: 14px;
-  }
-
-  button {
-    width: 100%;
-    padding: 10px;
-  }
+.Results button:hover {
+  background-color: #666;
 }

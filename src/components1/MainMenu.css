@@ -1,38 +1,56 @@
-/* src/MainMenu.css */
 .MainMenu {
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.MainMenu h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .components {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Две колонки */
+  gap: 10px; /* Уменьшаем расстояние между элементами */
 }
 
 .component {
-  margin: 10px;
-  padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
   cursor: pointer;
-  transition: transform 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+
 }
 
 .component:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .component img {
-  width: 100px;
-  height: 100px;
+  width: 80px; /* Уменьшаем размер изображения */
+  height: 80px; /* Уменьшаем размер изображения */
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .component h2 {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 1em; /* Уменьшаем размер текста */
   color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .quantity-controls {
@@ -43,16 +61,18 @@
 }
 
 .quantity-controls button {
-  background-color: #333;
-  color: #fff;
-  border: none;
   padding: 5px 10px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #444;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .quantity-controls button:hover {
-  background-color: #555;
+  background-color: #666;
 }
 
 .quantity-controls input {
@@ -60,39 +80,24 @@
   text-align: center;
   margin: 0 10px;
   padding: 5px;
+  font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.quantity-controls input:focus {
-  outline: none;
-  border-color: #333;
-}
-
-button {
-  background-color: #333;
+.component a button {
+  padding: 5px 10px;
+  font-size: 1em;
   color: #fff;
+  background-color: #444;
   border: none;
-  padding: 10px 20px;
-  margin-top: 10px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  top: 10px;
+  right: 10px;
 }
 
-button:hover {
-  background-color: #555;
-}
-
-/* Медиа-запросы для адаптивного дизайна */
-@media (max-width: 768px) {
-  .components {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .component {
-    width: 45%; /* Устанавливаем ширину для двух колонок */
-    margin: 10px 0;
-  }
+.component a button:hover {
+  background-color: #666;
 }
