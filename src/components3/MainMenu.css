@@ -1,64 +1,66 @@
-/* src/MainMenu.css */
 .MainMenu {
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.MainMenu h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .talentsmenu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Две колонки */
+  gap: 20px; /* Расстояние между элементами */
 }
 
 .talentmenu {
-  margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
-  transition: transform 0.3s;
 }
 
 .talentmenu:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .talentmenu img {
-  width: 100px;
-  height: 100px;
+  width: 100px; /* Размер изображения */
+  height: 100px; /* Размер изображения */
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .talentmenu h2 {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 1.2em; /* Размер текста */
   color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
+.talentmenu button {
   margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #444;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #555;
-}
-
-/* Медиа-запросы для адаптивного дизайна */
-@media (max-width: 768px) {
-  .talentsmenu {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .talentmenu {
-    width: 45%; /* Устанавливаем ширину для двух колонок */
-    margin: 10px 0;
-  }
+.talentmenu button:hover {
+  background-color: #666;
 }
