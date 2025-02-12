@@ -6,12 +6,12 @@ const TheHantos = () => {
     <div className="hantos-container">
       <h1 className="hantos-title">"Эпоха выживания"</h1>
       <div className="hantos-image">
-        <img src={`${process.env.PUBLIC_URL}/images/baner3.webp`} alt="About" className="about-image" />
+        <img src={`${process.env.PUBLIC_URL}/images/baner6.png`} alt="About" className="about-image" />
       </div>
       <h1>Социальные сети</h1>
       <h2>Наш телеграм канал</h2>
       <div className="social-media">
-        <a href="https://t.me/TheHanTosChat" target="_blank" rel="noopener noreferrer">
+        <a href="https://web.telegram.org/a/#-1002282387643" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-telegram-plane"></i> "Эпоха выживания"
         </a>
       </div>
