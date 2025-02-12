@@ -19,7 +19,7 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
-      <h1 className="projects-title">Наши проекты</h1>
+      <h1 className="projects-title">Спомогатор</h1>
       <div className="projects-image">
         <img src={`${process.env.PUBLIC_URL}/images/baner1.jpg`} alt="About" className="about-image" />
       </div>

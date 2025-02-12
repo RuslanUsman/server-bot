@@ -38,12 +38,12 @@ const App = () => {
           
           <nav>
             <ul style={{ listStyle: 'none', padding: '0', display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <li style={{ margin: '15px 20px' }}><Link to="/" style={{ color: '#fff', textDecoration: 'none', backgroundColor: '#444', padding: '8px 16px', borderRadius: '5px', transition: 'background-color 0.3s' }}><i className="fas fa-home"></i> Домой</Link></li>
+              <li style={{ margin: '15px 20px' }}><Link to="/" style={{ color: '#fff', textDecoration: 'none', backgroundColor: '#444', padding: '8px 16px', borderRadius: '5px', transition: 'background-color 0.3s' }}><i className="fas fa-home"></i> Главная</Link></li>
               <li style={{ margin: '15px 20px' }}><Link to="/about" style={{ color: '#fff', textDecoration: 'none', backgroundColor: '#444', padding: '8px 16px', borderRadius: '5px', transition: 'background-color 0.3s' }}><i className="fas fa-newspaper"></i> Новости</Link></li>
               <li style={{ margin: '15px 20px' }}><Link to="/game-info" style={{ color: '#fff', textDecoration: 'none', backgroundColor: '#444', padding: '8px 16px', borderRadius: '5px', transition: 'background-color 0.3s' }}><i className="fas fa-info-circle"></i> Информация</Link></li>
-              <li style={{ margin: '15px 20px' }}><Link to="/projects" style={{ color: '#fff', textDecoration: 'none', backgroundColor: '#444', padding: '8px 16px', borderRadius: '5px', transition: 'background-color 0.3s' }}><i className="fas fa-project-diagram"></i> Проекты</Link></li>
+              <li style={{ margin: '15px 20px' }}><Link to="/projects" style={{ color: '#fff', textDecoration: 'none', backgroundColor: '#444', padding: '8px 16px', borderRadius: '5px', transition: 'background-color 0.3s' }}><i className="fas fa-project-diagram"></i> Спомогатор</Link></li>
               <li style={{ margin: '15px 20px' }}><Link to="/contact" style={{ color: '#fff', textDecoration: 'none', backgroundColor: '#444', padding: '8px 16px', borderRadius: '5px', transition: 'background-color 0.3s' }}><i className="fas fa-envelope"></i> Контакты</Link></li>
-              <li style={{ margin: '15px 20px' }}><Link to="/thehantos" style={{ color: '#fff', textDecoration: 'none', backgroundColor: '#444', padding: '8px 16px', borderRadius: '5px', transition: 'background-color 0.3s' }}><i className="fas fa-user"></i> TheHantos</Link></li>
+              <li style={{ margin: '15px 20px' }}><Link to="/thehantos" style={{ color: '#fff', textDecoration: 'none', backgroundColor: '#444', padding: '8px 16px', borderRadius: '5px', transition: 'background-color 0.3s' }}><i className="fas fa-user"></i> Наши контакты</Link></li>
             </ul>
           </nav>
         </header>
@@ -78,7 +78,7 @@ const App = () => {
           </Routes>
         </main>
         <footer>
-          <p>© 2025 TheHantos Last Island of Survival. Все права защищены.</p>
+          <p>© 2025 "Эпоха Выживания". Все права защищены.</p>
         </footer>
       </div>
     </Router>
