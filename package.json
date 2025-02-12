@@ -1,7 +1,7 @@
 {
-  "name": "last-island-of-survival",
+  "name": "server-bot",
   "version": "0.1.0",
-  "homepage": "https://RuslanUsman.github.io/last-island-of-survival",
+  "homepage": "https://RuslanUsman.github.io/server-bot",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
